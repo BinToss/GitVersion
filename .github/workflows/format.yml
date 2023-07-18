@@ -22,6 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     name: DotNet Format
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.5.3
       - run: dotnet tool install -g dotnet-format
       - run: dotnet format ./ --folder --check --exclude **/AddFormats/
